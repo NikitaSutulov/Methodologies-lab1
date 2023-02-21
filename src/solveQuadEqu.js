@@ -12,6 +12,7 @@ const solveQuadEqu = (a, b, c) => {
         roots.push(x1, x2);
     }
     printRoots(roots);
+    console.log();
 };
 
 const printRoots = (roots) => {
@@ -21,7 +22,7 @@ const printRoots = (roots) => {
         console.log(`x1 = ${roots[0]}`);
     } else if (rootsLength == 2) {
         console.log(`x1 = ${roots[0]}`);
-        console.log(`x2 = ${roots[0]}`);
+        console.log(`x2 = ${roots[1]}`);
     }
 };
 
