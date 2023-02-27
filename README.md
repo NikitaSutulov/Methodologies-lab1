@@ -41,4 +41,4 @@ There are five example files for you to comfortably test the file mode in the ex
 
 **Revert-commit link:**
 
-does not exist yet...
+https://github.com/NikitaSutulov/Methodologies-lab1/commit/faa4027c95224e1acbf5875fa9e3db6263fdc9a1
