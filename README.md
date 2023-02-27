@@ -39,6 +39,9 @@ If you are using an OS of Windows family, the deafault newline symbol is CRLF (\
 
 There are five example files for you to comfortably test the file mode in the examples folder.
 
+**Demonstration of working (please click the immage to see the video on YouTube):**
+[![Program demo](https://computerinfobits.com/wp-content/uploads/2022/02/Windows-Desktop.webp)](https://youtu.be/dQw4w9WgXcQ)
+
 **Revert-commit link:**
 
 does not exist yet...
