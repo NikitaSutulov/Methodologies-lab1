@@ -7,5 +7,3 @@ if (process.argv.length < 3) {
 } else {
     startFileMode();
 }
-
-console.log();

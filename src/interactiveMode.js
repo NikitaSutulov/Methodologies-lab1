@@ -9,24 +9,29 @@ const startInteractiveMode = () => {
     ];
     const params = [];
 
-    //TODO: validation and error handling
     process.stdin.on('data', (data) => {
         if (params.length < questions.length) {
             const parsedData = parseFloat(data.toString());
-            params.push(parsedData);
-            if (params.length < questions.length) {
+            if (isNaN(parsedData)) {
+                process.stdout.write(`Error: expected a real number, got ${data.toString()}`);
                 process.stdout.write(questions[params.length]);
+            } else if (parsedData === 0 && params.length == 0) {
+                process.stdout.write(`Error: a cannot be 0\n`);
+                process.stdout.write(questions[0]);
             } else {
-                solveQuadEqu(...params);
-                process.exit();
-            }
+                params.push(parsedData);
+                if (params.length < questions.length) {
+                    process.stdout.write(questions[params.length]);
+                } else {
+                    solveQuadEqu(...params);
+                    process.exit();
+                }
+            } 
         }
     });
 
-    setTimeout(() => {
-        process.stdout.write(questions[0]);
-    }, 0);
-    
+    process.stdout.write(questions[0]);
+
 };
 
 
