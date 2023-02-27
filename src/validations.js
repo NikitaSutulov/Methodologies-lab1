@@ -9,7 +9,7 @@ const validateFilePath = (filePath) => {
 
 const validateFileStructure = (data) => {
     // a regular expression to check if a string matches format 'number number number\n'
-    const FORMAT_REGEXP = /^([+-]?([0-9]*[.])?[0-9]+)\s([+-]?([0-9]*[.])?[0-9]+)\s([+-]?([0-9]*[.])?[0-9]+)\n$/;
+    const FORMAT_REGEXP = /^([+-]?([0-9]*[.])?[0-9]+)\s([+-]?([0-9]*[.])?[0-9]+)\s([+-]?([0-9]*[.])?[0-9]+)(\r)?\n$/;
     if (!data.match(FORMAT_REGEXP)) {
         console.error(`Error: file ${filePath}: invalid file format`);
         process.exit();
