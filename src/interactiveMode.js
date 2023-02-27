@@ -15,7 +15,7 @@ const startInteractiveMode = () => {
             if (isNaN(parsedData)) {
                 process.stdout.write(`Error: expected a real number, got ${data.toString()}`);
                 process.stdout.write(questions[params.length]);
-            } else if (parsedData === 0 && params.length == 0) {
+            } else if (parsedData === 0 && params.length === 0) {
                 process.stdout.write(`Error: a cannot be 0\n`);
                 process.stdout.write(questions[0]);
             } else {

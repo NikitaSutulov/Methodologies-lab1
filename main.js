@@ -1,4 +1,3 @@
-import { solveQuadEqu } from './src/solveQuadEqu.js';
 import { startInteractiveMode } from './src/interactiveMode.js';
 import { startFileMode } from './src/fileMode.js';
 
