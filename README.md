@@ -19,7 +19,7 @@ To run the program in the interactive mode, just type this command in your termi
 
 `node main.js`
 
-Then there will be some dialogs for you to enter the coefficients for the equation. The equation itself will be displayed, so will its solution.
+Then there will be some dialogues for you to enter the coefficients for the equation. The equation itself will be displayed, and so will its solution.
 
 <u>File mode</u>
 
@@ -35,7 +35,7 @@ The file must be of a certain format for the program to successfully run it. For
 
 where \n is a newline symbol.
 
-If you are using an OS of Windows family, the deafault newline symbol is CRLF (\r\n). I took it into account and fixed this problem, so the program supports both LF (\n) and CRLF (\r\n) newline symbols.
+If you are using an OS of Windows family, the default newline symbol is CRLF (\r\n). I took it into account and fixed this problem, so the program supports both LF (\n) and CRLF (\r\n) newline symbols.
 
 There are five example files for you to comfortably test the file mode in the examples folder.
 
