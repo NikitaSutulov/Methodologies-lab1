@@ -1,4 +1,5 @@
 import { solveQuadEqu } from './solveQuadEqu.js';
+import { checkNumberIsNotDecimal } from './validations.js';
 
 
 const startInteractiveMode = () => {
@@ -12,7 +13,7 @@ const startInteractiveMode = () => {
     process.stdin.on('data', (data) => {
         if (params.length < questions.length) {
             const parsedData = parseFloat(data.toString());
-            if (isNaN(parsedData)) {
+            if (isNaN(parsedData) || checkNumberIsNotDecimal(data)) {
                 process.stdout.write(`Error: expected a real number, got ${data.toString()}`);
                 process.stdout.write(questions[params.length]);
             } else if (parsedData === 0 && params.length === 0) {

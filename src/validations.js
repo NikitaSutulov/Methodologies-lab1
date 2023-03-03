@@ -26,4 +26,9 @@ const validateANotZero = (a) => {
     }
 };
 
-export { validateFilePath, validateFileStructure, validateANotZero };
+const checkNumberIsNotDecimal = (number) => {
+    const INVALID_NUMBER_REGEXP = /([A-Za-z])+/g;
+    return number.toString().match(INVALID_NUMBER_REGEXP);
+}
+
+export { validateFilePath, validateFileStructure, validateANotZero, checkNumberIsNotDecimal };
